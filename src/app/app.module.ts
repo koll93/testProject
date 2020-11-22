@@ -7,7 +7,7 @@ import { ProfileComponent } from './profile-page/profile/profile.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule, MatTabsModule} from '@angular/material';
+import {MatButtonModule, MatExpansionModule, MatTabsModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -22,6 +22,7 @@ import {MatButtonModule, MatTabsModule} from '@angular/material';
     BrowserAnimationsModule,
     MatButtonModule,
     MatTabsModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

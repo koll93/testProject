@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
-import {IntProfile} from '../shared/interface';
+import {IntProfile, IntUserrole} from '../shared/interface';
 
 @Component({
   selector: 'app-profile',
@@ -11,7 +11,7 @@ import {IntProfile} from '../shared/interface';
 export class ProfileComponent implements OnInit, OnDestroy {
   subscription: Subscription;
   profile: IntProfile;
-  role: IntProfile[];
+  role: IntUserrole[];
 
   constructor(private actRouter: ActivatedRoute) { }
 

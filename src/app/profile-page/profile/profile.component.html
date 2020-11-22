@@ -73,7 +73,41 @@
 
           </div>
         </mat-tab>
-        <mat-tab label="Роли">Роли</mat-tab>
+        <mat-tab label="Роли">
+
+          <div class="roleCol">
+            <div class="roleToolbar">
+              <span class="roleLine">Роль</span>
+              <div class="roleRight">
+                <span class="roleLine" style="width: 166px">Период</span>
+                <span class="roleLine" style="width: 235px">Способ назначения</span>
+              </div>
+            </div>
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>ИС1</mat-panel-title>
+                <mat-panel-description></mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <div class="roleAcord" *ngFor="let item of role">
+                <span class="roleLine">{{item.name}}</span>
+                <div class="roleRight">
+                  <span class="roleLine" style="width: 166px">C {{item.startDate | date :'dd.MM.yyyy'}}&nbsp;
+                    <span *ngIf="item.endDate !== null"> до {{item.endDate | date :'dd.MM.yyyy'}}</span>
+                  </span>
+                  <span class="roleLine" style="width: 235px">{{item.approvalType}}</span>
+                </div>
+              </div>
+
+            </mat-expansion-panel>
+          </mat-accordion>
+
+
+          </div>
+
+
+        </mat-tab>
       </mat-tab-group>
 
     </div>
