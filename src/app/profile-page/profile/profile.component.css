@@ -1,0 +1,206 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  height: 100%;
+  width: 100%;
+}
+
+.toolbar {
+  height: 100%;
+  width: 48px;
+  background: #36465F;
+}
+
+.left {
+  margin-left: 24px;
+  align-self: center;
+}
+
+.right {
+  display: flex;
+  margin: 0 0 0 auto;
+  align-self: center;
+  align-items: center;
+}
+
+.topToolbar {
+  display: flex;
+  height: 48px;
+  width: 100%;
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+}
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: calc(100% - 49px);
+}
+
+.logo {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background: #0086D1;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 48px;
+  background: #202E43;
+  font-size: 24px;
+  border-left: 4px solid #60A8D8;
+
+}
+
+.circle {
+  display: flex;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: #5B69BA;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Segoe UI", serif;
+  color: white;
+  margin-right: 10px;
+}
+
+.mainCircle {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #5B69BA;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-family: "Segoe UI", serif;
+  color: white;
+  margin-left: 24px;
+}
+
+.name {
+  margin-right: 10px;
+}
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 49px);
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.but {
+  display: flex;
+  height: 32px;
+  width: 32px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid rgba(45, 156, 219, 0.3);
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  width: 100%;
+  height: 80px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: left;
+}
+
+.personInfo {
+  margin-left: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  width: 100%;
+  height: calc(100% - 200px);
+}
+mat-tab-group {
+  width: 100%;
+}
+
+:host ::ng-deep .mat-tab-labels {
+  background: linear-gradient(180deg, #E9F0F7 0%, #E9F0F7 100%);
+}
+:host ::ng-deep .mat-tab-label-active {
+  background:  #FFFFFF;
+  border-top: 3px solid rgba(45, 156, 219, 1);
+}
+
+:host ::ng-deep mat-ink-bar {
+  width: 0 !important;
+}
+
+:host ::ng-deep .mat-tab-label:first-child {
+  margin-left: 24px;
+}
+:host ::ng-deep .mat-tab-label {
+  background:  rgba(255, 255, 255, 0.5);;
+}
+
+.infoForm {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 24px;
+  height: 240px;
+}
+
+.attr {
+  background: rgba(0, 0, 0, 0.05);
+  height: inherit;
+  width: 192px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.items {
+  height: inherit;
+  width: 192px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.lineLeft {
+  display: flex;
+  justify-content: right;
+  height: 24px;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Segoe UI", serif;
+}
+.lineRight{
+  display: flex;
+  justify-content: left;
+  height: 24px;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Segoe UI", serif;
+}
